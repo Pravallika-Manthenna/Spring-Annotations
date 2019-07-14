@@ -12,9 +12,7 @@ public class Main {
     ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
     Movie movie = context.getBean(Movie.class);
     movie.displayActor();
-    Movie movie1 = context.getBean(Movie.class);
-    movie1.displayActor();
-    System.out.println(movie==movie1);
+
 
   }
 }
