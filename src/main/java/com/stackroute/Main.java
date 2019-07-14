@@ -13,6 +13,6 @@ public class Main {
     Movie movie = context.getBean(Movie.class);
     movie.displayActor();
 
-
+    ((AnnotationConfigApplicationContext)context).close();
   }
 }

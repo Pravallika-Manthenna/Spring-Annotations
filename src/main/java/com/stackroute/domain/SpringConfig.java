@@ -6,7 +6,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 
 @Configuration
-@ComponentScan("com.stackroute.domain")
+@ComponentScan("com.stackroute")
 @PropertySource("classpath:Actor-info.properties")
 public class SpringConfig {
 
