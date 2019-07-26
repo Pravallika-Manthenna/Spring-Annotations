@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 
+//component annotation is used
+
 @Component
 public class Actor {
 
