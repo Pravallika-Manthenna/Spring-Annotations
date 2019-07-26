@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
   public class Movie implements ApplicationContextAware, BeanFactoryAware, BeanNameAware {
 
+    //autowired is used to create beans
 @Autowired
     Actor actor;
 
@@ -28,20 +29,23 @@ import org.springframework.stereotype.Component;
       actor.display();
     }
 
+    //implemeting bean factory aware
   @Override
   public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-    System.out.println("Application Context implemented");
+    System.out.println("Bean Factory implemented");
 
   }
 
+    //implementing bean name aware
   @Override
   public void setBeanName(String s) {
-    System.out.println("Bean factory implemented");
+    System.out.println("Bean name implemented");
   }
 
+    //implementing application context aware
   @Override
   public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-    System.out.println("Bean Name implemented ");
+    System.out.println("Application context implemented ");
   }
 }
 
