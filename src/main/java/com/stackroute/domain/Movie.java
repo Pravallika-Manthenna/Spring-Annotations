@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
   public class Movie {
-
+//autowired is used to create beans
 @Autowired
     Actor actor;
 
